@@ -1,0 +1,178 @@
+/*--------------- Par_Hossam_Eddine_Abouraich -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.story.sec_title{
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.story.sec_title p {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5a4635;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #5a4635;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #5a4635;
+  border: 2px solid #5a4635;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: -58px;
+  background: #5a4635;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: -58px;
+}
+
+.container .title {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006E51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+  color: #5a4635;
+}
+
+.container.left .title {
+  right: -450px;
+}
+
+.container.right .title {
+  left: -450px;
+}
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: inherit;
+  position: relative;
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+}
+.container .content h2 {
+  font-weight: normal;
+  font-size: 66px;
+  margin: -10px 0 0 0;
+  transition: .4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: "Cormorant", sans-serif;
+  color:  #332a21;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: #332a21;
+}
+
+
+.container .content img{
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 800px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 98px;
+  }
+
+  .container.left .title,
+  .container.right .title {
+    right: auto;
+    left: 90px;
+    position: relative;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+  }
+}

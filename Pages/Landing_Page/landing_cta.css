@@ -1,0 +1,120 @@
+/*--------------- Par_Hossam_Eddine_Abouraich -------------------*/
+.landing_cta {
+    background-color: #ffaf0325;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 50px 120px;
+    border-radius: 15px;
+    margin: 40px 0px;
+  }
+
+  .online , .instore {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    height: 600px;
+  }
+  
+  .card {
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 1s ease, box-shadow 0.3s ease, background-image 2s ease;
+    overflow: hidden;
+  }
+
+  .card.instore{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/Pages/images/58504.jpg');
+    
+  }
+
+
+  .card.online{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/Pages/images/siede-view-cook-holdind-tray-eith-eclairs.jpg');
+  }
+  
+  .card h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #e7e0db;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    z-index: 2;
+  }
+  
+  .btn {
+    z-index: 2;
+  }
+  
+  .card .btn {
+    background-color: #D8BC97;
+    color: #333;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+  }
+  
+  .card .btn:hover {
+    background-color: #cdb290;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #946808c5;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+  }
+  
+  
+  .card:hover::before {
+    opacity: 1;
+  }
+  
+  .card:hover {
+    background-color: #67797c;
+    box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-container svg {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+    fill: #272221;
+    z-index: 5;
+    position: relative;
+  }
+  
+  .card .icon-container svg{
+    fill: #e7e0db;
+  }
+  
+  .landing_cta p {
+    font-size: 17px;
+    line-height: 20px;
+    color: #e7e0db;
+    z-index: 50;
+  }

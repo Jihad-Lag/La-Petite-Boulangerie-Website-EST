@@ -1,0 +1,64 @@
+/*--------------- Par_Hossam_Eddine_Abouraich -------------------*/
+.location-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+}
+
+.split-section {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin-top: 200px;
+    padding: 20px 80px;
+    background-color: rgb(216, 188, 151, 0.4);
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+
+.split-section .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.split-section .top,
+.split-section .bottom {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.split-section .top {
+    flex: 2;
+}
+.split-section .top svg{
+    height: 80px;
+    width: 80px;
+}
+
+.split-section .bottom {
+    flex: 1;
+    font-size: 16px;
+}
+
+.split-section .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px 15px;
+    background-color: rgb(216, 188, 151, 0.2);
+    border-radius: 15px; 
+    font-size: 22px;
+    flex: 2;
+}

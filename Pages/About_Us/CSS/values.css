@@ -1,0 +1,86 @@
+/*--------------- Par_Hossam_Eddine_Abouraich -------------------*/
+.values {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.values h1 {
+    display: inline-block;
+    font-size: 40px;
+    color: #3e3533;
+}
+
+.values h1::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: #caac87;
+    margin: 0 auto;
+}
+
+.values-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    color: #5a4635;
+    line-height: 1.6;
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.value-card {
+    background-color: #f2f0ef;
+    padding: 50px 30px 30px; 
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; 
+}
+
+.value-number {
+    width: 60px;
+    height: 60px;
+    background-color: #dac7ae;
+    color: #6d492e;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none; 
+}
+
+.value-card h3 {
+    font-size: 20px;
+    color: #8B5E3B;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 14px;
+    color: #5a4635;
+    line-height: 1.5;
+}
+
+.values-footer {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #5a4635;
+    font-style: italic;
+}

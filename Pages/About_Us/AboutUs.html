@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <link rel="icon" href="../images/fav_icon.png" type="image/png">
+    <link rel="stylesheet" href="../_NavBar_Newsletter_Footer/footer.css" />
+    <link rel="stylesheet" href="../_NavBar_Newsletter_Footer/navbar.css">
+    <link rel="stylesheet" href="../_NavBar_Newsletter_Footer/newsletter.css">
+    <link rel="stylesheet" href="CSS/page_banner.css">
+    <link rel="stylesheet" href="CSS/Call_to_action.css">
+    <link rel="stylesheet" href="CSS/today.css">
+    <link rel="stylesheet" href="CSS/values.css">
+    <link rel="stylesheet" href="CSS/timeline.css">
+
+    <script src="../_NavBar_Newsletter_Footer/navbar.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&family=Roboto+Slab:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            
+            font-family: "Sour Gummy", serif;
+            background-image: url("../images/background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat repeat;
+            scroll-behavior: smooth;
+        }
+
+        .sec_title h1 {
+            display: inline-block;
+            font-size: 40px;
+            color: #3e3533;
+        }
+
+        .sec_title h1::after {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 2px;
+            background-color: #caac87;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="toggle-big toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <path
+                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="nav-left">
+                <ul class="links">
+                    <li><a href="../Nos_Produits/Nos_Produits.html">Nos produits</a></li>
+                    <li><a href="../About_Us/AboutUs.html">À propos</a></li>
+                    <li><a href="../Contact_Us/Contact_Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="nav-center">
+                <a href="../../index.html"><img src="../images/Logo_Bakery_Full.png" alt="logo" class="nav-logo-full logo" /></a>
+            </div>
+            <div class="nav-right">
+                <a href="../Nos_Produits/Nos_Produits.html"><button class="action_btn notcart">Commander</button></a>
+                <a href="../Locations/locations.html" class="nav-icon notcart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z">
+                        </path>
+                    </svg></a>
+                <a href="../Connexion_Us_&_Inscription/Connexion.html" class="nav-icon notcart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z">
+                        </path>
+                    </svg></a>
+                <a href="#" class="nav-icon cart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z">
+                        </path>
+                    </svg></a>
+            </div>
+        </nav>
+        <nav class="navbar-sticky">
+            <div class="toggle-sticky toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <path
+                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="nav-left">
+                <ul class="links">
+                    <li><a href="../Nos_Produits/Nos_Produits.html">Nos produits</a></li>
+                    <li><a href="../About_Us/AboutUs.html">À propos</a></li>
+                    <li><a href="../Contact_Us/Contact_Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-center mini">
+                <a href="../../index.html"><img src="../images/Logo_Bakery_Mini.png" alt="logo" class="nav-logo-mini logo" /></a>
+            </div>
+            <div class="nav-right">
+                <a href="../Nos_Produits/Nos_Produits"><button class="action_btn notcart">Commander</button></a>
+                <a href="../Locations/locations.html" class="nav-icon notcart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z">
+                        </path>
+                    </svg></a>
+                <a href="../Connexion_Us_&_Inscription/Connexion.html" class="nav-icon notcart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z">
+                        </path>
+                    </svg></a>
+                <a href="#" class="nav-icon cart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z">
+                        </path>
+                    </svg></a>
+            </div>
+        </nav>
+        <div class="dropdown_menu open">
+            <li><a href="../Nos_Produits/Nos_Produits.html">Nos produits</a></li>
+            <li><a href="../About_Us/AboutUs.html">À propos</a></li>
+            <li><a href="../Contact_Us/Contact_Us.html">Contact</a></li>
+            <li><a href="../Locations/locations.html">Nos magasins</a></li>
+            <li><a href="../Connexion_Us_&_Inscription/Connexion.html">S'inscrire</a></li>
+            <a href="../Nos_Produits/Nos_Produits.html"><button class="action_btn">Commander</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page_banner">
+            <div class="tittle_banner">
+                <h1>Une Passion au Service du Goût</h1><br><br>
+                <p>Depuis l’an 2000, à travers nos 6 boulangeries, nous mettons tout notre savoir-faire et notre passion
+                    au service des créations authentiques, faites avec amour et dans le respect de la tradition
+                    artisanale.
+                </p><br>
+                <p>Plongez dans l’histoire de <strong>La Petite Boulangerie</strong> et découvrez notre engagement pour
+                    le bon et le beau !</p>
+            </div>
+            <div class="picture_banner">
+                <h1>À propos de nous</h1>
+            </div>
+        </section>
+        <section class="story">
+            <div class="story sec_title">
+                <h1>Notre histoire</h1> <br><br><br>
+                <p>Derrière chaque fournée se cache une histoire, celle d’une passion transmise de génération en
+                    génération. De nos débuts modestes à une boulangerie reconnue, notre parcours est fait de tradition,
+                    d’excellence et d’innovation. Découvrez comment La Petite Boulangerie est née et a grandi au fil des
+                    années. </p>
+            </div>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="title ">Les Premiers Pas d’un Artisan Passionné</div>
+                    <div class="content">
+                        <img src="../images/1990.JPG" alt="image">
+                        <h2>1990</h2>
+                        <p>Notre fondateur a grandi dans l’amour du pain et de la pâtisserie, entre les gestes soigneux
+                            de sa mère, qui
+                            pétrissait chaque jour pour la famille, et les ateliers des plus grands artisans où il a
+                            affûté son
+                            savoir-faire. Alliant tradition et apprentissage professionnel, il a nourri une vision :
+                            offrir un pain
+                            d’exception, fait avec passion.</p>
+                    </div>
+                </div>
+
+                <div class="container right">
+                    <div class="title">L’Ouverture de la Première Boulangerie</div>
+                    <div class="content">
+                        <img src="../images/various-cakes-supermarket-shelves-sale.jpg" alt="image">
+                        <h2>2000</h2>
+                        <p>C’est à Talborjt que tout a commencé. Une petite boulangerie familiale, chaleureuse et
+                            authentique, où chaque
+                            pain racontait une histoire. Très vite, les habitants du quartier sont tombés sous le charme
+                            de ces saveurs
+                            uniques, faisant de cette adresse un incontournable pour les amoureux du bon pain.</p>
+                    </div>
+                </div>
+
+                <div class="container left">
+                    <div class="title">Une Expansion au Service de la Qualité</div>
+                    <div class="content">
+                        <img src="../images/close-up-female-baker-putting-croissant-paper-bag.jpg" alt="image">
+                        <h2>2015</h2>
+                        <p>Avec l’ouverture de notre troisième boutique, nous avons franchi une nouvelle étape : celle
+                            d’une franchise qui grandit tout en restant fidèle à son essence. Nos équipements se
+                            modernisent, nos méthodes s’affinent, mais notre engagement demeure le même : un goût
+                            inimitable et une qualité préservée.</p>
+                    </div>
+                </div>
+        </section>
+        <section class="today">
+            <h2>Aujourd’hui</h2>
+            <p>Aujourd’hui, La Petite Boulangerie compte 6 boulangeries à travers la ville, alliant tradition et
+                innovation. La commande en ligne facilite l’accès à nos créations, mais notre promesse reste inchangée :
+                servir chaque client avec le même amour et la même authenticité.</p>
+            <p><em>"Pour savoir où l'on va, il faut se souvenir d’où l’on vient. De nos humbles débuts à notre succès
+                    d’aujourd’hui, nous avons toujours su allier tradition et modernité. Tout ce que nous avons
+                    accompli, et tout ce qui nous attend encore, repose sur notre principe fondateur : offrir le
+                    meilleur avec passion."</em></p>
+
+            <div class="stats-container">
+                <div class="stat"><span data-target="6">0</span> Adresses</div>
+                <div class="stat"><span data-target="77">0</span> Produits</div>
+                <div class="stat"><span data-target="42">0</span> Employés</div>
+                <div class="stat"><span data-target="25">0</span> Ans avec vous</div>
+            </div>
+        </section>
+        <section class="values">
+            <h1>Nos Valeurs</h1> <br><br><br>
+            <p class="values-intro">
+                Depuis toujours, nous nous engageons à allier tradition, qualité et innovation pour offrir le meilleur
+                de la boulangerie artisanale.
+            </p>
+
+            <div class="values-container">
+                <div class="value-card">
+                    <div class="value-number">I</div>
+                    <h3> Tradition</h3>
+                    <p>
+                        Nos recettes sont inspirées d’un savoir-faire transmis de génération en génération. Nous
+                        respectons les méthodes artisanales pour préserver ce goût unique qui fait la richesse de notre
+                        boulangerie.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-number">II</div>
+                    <h3> Qualité</h3>
+                    <p>
+                        Nous sélectionnons des ingrédients naturels et locaux, travaillons nos levains avec soin et
+                        veillons à chaque détail pour garantir des produits d’exception, jour après jour.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-number">III</div>
+                    <h3> Innovation</h3>
+                    <p>
+                        Tout en honorant la tradition, nous évoluons avec notre époque. Nouvelles saveurs, techniques
+                        modernes et commande en ligne : nous réinventons notre métier pour mieux vous régaler.
+                    </p>
+                </div>
+            </div>
+
+            <p class="values-footer">
+                Un héritage préservé, une qualité inégalée et une innovation continue : voilà notre promesse.
+            </p>
+        </section>
+        <section class="call_to_action">
+            <div class="cta_title sec_title">
+                <h1>Découvrez Nos Délices !</h1>
+            </div>
+            <div class="location">
+                <div class="text-container">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M200,224H150.54A266.56,266.56,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25a88,88,0,0,0-176,0c0,31.4,14.51,64.68,42,96.25A266.56,266.56,0,0,0,105.46,224H56a8,8,0,0,0,0,16H200a8,8,0,0,0,0-16ZM56,104a72,72,0,0,1,144,0c0,57.23-55.47,105-72,118C111.47,209,56,161.23,56,104Zm112,0a40,40,0,1,0-40,40A40,40,0,0,0,168,104Zm-64,0a24,24,0,1,1,24,24A24,24,0,0,1,104,104Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p>Avec <strong>6 boutiques</strong> près de chez vous, la tradition artisanale n’a jamais été aussi
+                        accessible. <br>Venez
+                        nous rendre visite et laissez-vous séduire par nos saveurs uniques !</p> <br><br><br>
+                    <a href="#" class="btn">Trouver une boulangerie</a>
+                </div>
+            </div>
+            <div class="online">
+                <div class="card">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2>Parcourez notre sélection de pains et pâtisseries artisanales, avec un large choix de créations
+                        pour
+                        tous les goûts. Faites votre choix et laissez-vous séduire par des recettes authentiques,
+                        préparées
+                        avec passion !
+                    </h2> <br>
+                    <a href="#" class="btn"> Découvrez nos créations</a>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="join">
+                <h2>Inscrivez-vous à notre newsletter</h2><br>
+                <p>Restez informé de nos dernières délices cuits au four et de nos offres exclusives.</p><br><br>
+                <input type="email" placeholder="Entez votre email" required>
+                <button type="submit">S'inscrire</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-column logo">
+                <img src="../images/Logo_Bakery_Mini.png" alt="Logo" class="footer-logo logo" />
+            </div>
+            <div class="footer-column quick-links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="../../index.html">Accueil</a></li>
+                    <li><a href="../About_Us/AboutUs.html">À propos</a></li>
+                    <li><a href="../Nos_Produits/Nos_Produits.html">Nos produits</a></li>
+                    <li><a href="../Contact_Us/Contact_Us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column cta-links">
+                <h3>Nos services</h3>
+                <ul>
+                    <li><a href="../Nos_Produits/Nos_Produits.html">Commander</a></li>
+                    <li><a href="../Locations/locations.html">Nos magasins</a></li>
+                    <li><a href="../Connexion_Us_&_Inscription/Connexion.html">Mon compte</a></li>
+                </ul>
+            </div>
+            <div class="footer-column socials">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>
+                    © 2025 La petite boulangerie. Tous droits réservés. |
+                    <a href="#">Conditions d'utilisation</a>
+                </p>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#top" class="scroll-to-top"><svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="32"
+                        height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z">
+                        </path>
+                    </svg>
+                    Retour en haut</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function animateCountUp(element, target) {
+            let start = 0;
+            let duration = 1500;
+            let stepTime = Math.abs(Math.floor(duration / target));
+
+            let timer = setInterval(() => {
+                start++;
+                element.textContent = start;
+                if (start >= target) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let span = entry.target.querySelector('span');
+                    let targetValue = parseInt(span.dataset.target, 10);
+                    animateCountUp(span, targetValue);
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat').forEach(stat => {
+            observer.observe(stat);
+        });
+
+    </script>
+</body>
+
+</html>

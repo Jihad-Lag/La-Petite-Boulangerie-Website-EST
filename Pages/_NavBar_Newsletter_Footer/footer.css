@@ -1,0 +1,146 @@
+/*--------------- Par_Hossam_Eddine_Abouraich -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+.footer {
+    background-color: rgb(249, 241, 216, 0.5);
+    color: #000000;
+    margin: 0;
+    padding: 40px 20px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    padding: 20px 15px;
+}
+
+.footer-column.logo {
+    flex: 2; 
+    max-width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.footer-column h3 {
+    text-shadow: 2px 2px 5px rgba(15, 14, 14, 0.234);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #36270c;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #4a2c1a; 
+    text-decoration: none;
+    font-size: 1.1em; 
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #b48133; 
+}
+
+.footer-logo {
+    max-width: 200px; 
+    height: auto;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: #8b5e34; 
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.footer-bottom-left p {
+    font-size: 0.9em;
+    color: #000000;
+}
+
+.footer-bottom-left a {
+    color: #4a2c1a; 
+    text-decoration: none;
+}
+
+.footer-bottom-left a:hover {
+    color: #000000;
+}
+
+.arrow{
+    padding-top: 20px;
+    width: 15px;
+}
+
+.arrow:hover{
+    color: #4a2c1a;
+}
+.back-to-top {
+    color: #000000; 
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.back-to-top i {
+    margin-right: 5px; 
+}
+
+.back-to-top:hover {
+    color: #4a2c1a; 
+}
+
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .footer-column.logo {
+        max-width: 100%; 
+        flex: 100%;
+        padding-top: 0; 
+    }
+
+    .footer-column h3 {
+        font-size: 1.3em;
+    }
+
+    .footer-column ul li a {
+        font-size: 1em; 
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom-right {
+        margin-top: 10px;
+    }
+}

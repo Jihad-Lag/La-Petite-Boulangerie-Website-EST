@@ -1,0 +1,231 @@
+/*--------------- Par_Hossam_Eddine_Abouraich -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::selection{
+    background-color: rgb(207, 170, 101);
+}
+
+.logo::selection{
+    background-color: rgba(240, 248, 255, 0);
+}
+
+header {
+    font-family: "Montserrat", sans-serif;
+    position: sticky;
+    top: 0; 
+    height: 20px;
+    z-index: 999; 
+    width: 100%;
+    font-weight: 600;
+}
+.navbar, .navbar-sticky{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    padding: 0px 2.5%;
+    padding-top: 6px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.navbar{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-sticky{
+    opacity: 0;
+    transform: translateY(-100%); 
+}
+
+
+.navbar.scrolled {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+}
+
+.navbar-sticky.scrolled{
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+    top: 0;
+    background-color: #FAF5E9;
+    height: 60px;
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 2;
+}
+
+.links {
+    display: flex;
+    gap: 1.8rem;
+}
+
+li, a{
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    list-style: none;
+}
+a:hover{
+    color: #f0ab7a;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    z-index: 5;
+}
+
+.nav-left {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+.nav-center.mini{
+    padding-top: 0px;
+}
+
+.nav-logo-full {
+    width: 220px;
+}
+
+.nav-logo-mini {
+    width: 120px; 
+}
+
+.action_btn{
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0ab7a;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.action_btn:hover{
+    background-color: rgb(163, 152, 130);
+    color: #f7f0eb;
+}
+
+.nav-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #000000;
+}
+
+.nav-icon:hover svg {
+    fill: rgb(245, 133, 5);
+}
+
+.nav-center img:hover{
+    cursor: pointer;
+}
+.toggle svg {
+    display: none;
+    fill: #594a47;
+}
+.toggle:hover svg{
+    fill: rgb(184, 158, 110);
+    cursor: pointer;
+}
+
+.dropdown_menu {
+    position: absolute;
+    left: 4rem;
+    top: 70px;
+    width: 90%;
+    max-width: 300px;
+    padding: 0.5rem;
+    background-color: #e1dad747;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden; 
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, height 1s ease, visibility 0s linear 1s;
+    z-index: 999;
+}
+.dropdown_menu.open{
+    opacity: 1;
+    visibility: visible;
+    height: 206px;
+    transition: opacity 1s ease, height 1s ease;
+ }
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1400px) {
+    .navbar, .navbar-sticky, .action_btn{
+        font-size: 1.2rem;
+    }
+    .nav-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+    .nav-logo-full {
+        width: 260px;
+    }
+    
+}
+
+@media (max-width: 890px) {
+    .nav-left , .notcart{
+        display: none;
+    }
+    .toggle svg, .nav-icon.cart svg{
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+    .nav-right{
+        flex: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 0px;
+    }
+}
+
+@media (min-width: 890px) {
+    .dropdown_menu {
+        display: none;
+    }
+}
+
+.cart{
+    display: none;
+    visibility: hidden;
+}

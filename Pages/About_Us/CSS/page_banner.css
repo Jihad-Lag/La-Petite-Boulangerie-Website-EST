@@ -1,0 +1,51 @@
+/*--------------- Par_Hossam_Eddine_Abouraich -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section {
+    font-family: "Montserrat", sans-serif;
+    padding: 0px 80px;
+}
+
+.page_banner {
+    margin-top: 220px;
+}
+
+.tittle_banner {
+    text-align: center;
+    width: 100%;
+    padding: 0px 15%;
+}
+
+.tittle_banner h1 {
+    font-size: 35px;
+}
+
+.tittle_banner p {
+    font-size: 17px;
+}
+
+.picture_banner {
+    margin: 80px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/about_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+
+.picture_banner h1 {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    z-index: 1;
+}

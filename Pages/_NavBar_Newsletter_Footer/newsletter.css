@@ -1,0 +1,62 @@
+/*--------------- Par_Hossam_Eddine_Abouraich -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&family=Roboto+Slab:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+.newsletter{
+    
+    background-color:rgb(248, 245, 240, 0.5);
+    width: 100%;
+    font-family: "Sour Gummy", serif;
+}
+.join {
+    font-family: "Sour Gummy", serif;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 80px 10%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #d35400;
+    margin-bottom: 10px;
+}
+.join p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.join input {
+    color: #000000;
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ff990b91;
+    font-size: 16px;
+    border-radius: 25px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.join button {
+    font-family: "Sour Gummy", serif;
+    width: 90%;
+    padding: 12px;
+    background-color: #ff990b91;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.join button:hover {
+    background-color: #a08965;
+}
+
+@media (min-width: 1070px){
+    .join button , .join input{
+        max-width: 730px;
+    }
+}
